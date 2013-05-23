@@ -11,6 +11,7 @@
 		CC9863AE93C98AD85DB31298 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9863E55299AFF798E2BCD0 /* Foundation.framework */; };
 		CC9865FFB5C4ECF7A4E94EED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC986C3AA1316A02B7574444 /* UIKit.framework */; };
 		CC986632F9CE3BA3D869E34D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CC986951A1ADE71B542CF405 /* Default.png */; };
+		CC9866E1F120867A0460A12A /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9861B21604BC5DD93E56F3 /* libOCMock.a */; };
 		CC9867312FC11E3BA25DDE1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC986E55266D65BBBB7CECB5 /* InfoPlist.strings */; };
 		CC9867A89D5611E5FD90C8F5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC986C3AA1316A02B7574444 /* UIKit.framework */; };
 		CC9867AE06854B36F799C582 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC986CC3A21A985F6C58FC50 /* main.m */; };
@@ -21,8 +22,8 @@
 		CC986B1626382DA04D1AD8E8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC986BFC9CA6A5B91310211C /* MainStoryboard.storyboard */; };
 		CC986C7CB0A156CC33641337 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC986C5AE4584E9C061C9D4C /* CoreGraphics.framework */; };
 		CC986D22E23891EDC97FC8E1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC986DABFA62E461DA47457E /* Default-568h@2x.png */; };
-		CC986D5361F216DA7CF2B4A9 /* iOSMVPKataRootTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC986F44881C30F81DFFF150 /* iOSMVPKataRootTests.m */; };
 		CC986E2658E0BF246AA3BC39 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC98666525CEA51FCC99EEB3 /* Default@2x.png */; };
+		CC986E3D51D76BAF38A940F6 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9861B21604BC5DD93E56F3 /* libOCMock.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,27 +37,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC9861B21604BC5DD93E56F3 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = Lib/OCMock/iOS/libOCMock.a; sourceTree = "<group>"; };
 		CC9863E55299AFF798E2BCD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CC9864F46CBA9C1C0EA40074 /* EIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EIViewController.m; sourceTree = "<group>"; };
 		CC98658E91BC37FDFE615052 /* iOSMVPKataRoot-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "iOSMVPKataRoot-Info.plist"; sourceTree = "<group>"; };
 		CC98666525CEA51FCC99EEB3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CC9867610A467E36C9CC02BD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC9868CF92CCE841D4294C67 /* iOSMVPKataRootTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = "iOSMVPKataRootTests-Info.plist"; sourceTree = "<group>"; };
+		CC98692DDE82A1E2441D18C1 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
 		CC986951A1ADE71B542CF405 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CC98696CC9523F28D0171FAC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		CC9869B9569C82AB343F5E24 /* iOSMVPKataRootTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSMVPKataRootTests.h; sourceTree = "<group>"; };
+		CC9869F5961C95B50F4A9A39 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
+		CC9869F7E06A55D045774422 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
 		CC986A52E85E7644EC6102E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CC986B177146CCED9A4E3145 /* EIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EIViewController.h; sourceTree = "<group>"; };
 		CC986B1AD965915AA2275D62 /* EIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EIAppDelegate.m; sourceTree = "<group>"; };
+		CC986B32DF0C3431BED4B717 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
+		CC986B72AB627A4807022E9F /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
 		CC986C16C5C1FE7D3B9B7502 /* iOSMVPKataRoot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSMVPKataRoot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC986C17151BCA911E819227 /* iOSMVPKataRootTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSMVPKataRootTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC986C3AA1316A02B7574444 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CC986C5AE4584E9C061C9D4C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CC986CC3A21A985F6C58FC50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CC986DABFA62E461DA47457E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CC986DCDB5340C02B410F667 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
 		CC986E05B9D3DA5499B5CAB5 /* EIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EIAppDelegate.h; sourceTree = "<group>"; };
 		CC986E92FFFF095DBF1F4EA0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		CC986F44881C30F81DFFF150 /* iOSMVPKataRootTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSMVPKataRootTests.m; sourceTree = "<group>"; };
 		CC986F5E948D128D3773FCAA /* iOSMVPKataRoot-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSMVPKataRoot-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -68,6 +74,7 @@
 				CC9867A89D5611E5FD90C8F5 /* UIKit.framework in Frameworks */,
 				CC9863AE93C98AD85DB31298 /* Foundation.framework in Frameworks */,
 				CC986C7CB0A156CC33641337 /* CoreGraphics.framework in Frameworks */,
+				CC986E3D51D76BAF38A940F6 /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,7 @@
 				CC9860A48B284DF4AA900AC7 /* SenTestingKit.framework in Frameworks */,
 				CC9865FFB5C4ECF7A4E94EED /* UIKit.framework in Frameworks */,
 				CC9868B08B065829A317252F /* Foundation.framework in Frameworks */,
+				CC9866E1F120867A0460A12A /* libOCMock.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +128,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		CC98655489AE77E7DC76E33D /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CC986F89A07FC69127C2EC9F /* OCMock */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
 		CC986ABE33565F6C4939620B /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +152,7 @@
 				CC9863E55299AFF798E2BCD0 /* Foundation.framework */,
 				CC986C5AE4584E9C061C9D4C /* CoreGraphics.framework */,
 				CC986E92FFFF095DBF1F4EA0 /* SenTestingKit.framework */,
+				CC9861B21604BC5DD93E56F3 /* libOCMock.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,17 +164,45 @@
 				CC986BA190EE3D04C53BCCB0 /* Frameworks */,
 				CC9861DD8799D60CE1F91D10 /* iOSMVPKataRoot */,
 				CC986ECA081BFBAB186D2490 /* iOSMVPKataRootTests */,
+				CC986C919CB8F0BF6FE1F813 /* Lib */,
 			);
+			sourceTree = "<group>";
+		};
+		CC986C919CB8F0BF6FE1F813 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				CC986FC194865D1B4A5BD2D6 /* OCMock */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 		CC986ECA081BFBAB186D2490 /* iOSMVPKataRootTests */ = {
 			isa = PBXGroup;
 			children = (
 				CC98642D656839557CAE3029 /* Supporting Files */,
-				CC9869B9569C82AB343F5E24 /* iOSMVPKataRootTests.h */,
-				CC986F44881C30F81DFFF150 /* iOSMVPKataRootTests.m */,
 			);
 			path = iOSMVPKataRootTests;
+			sourceTree = "<group>";
+		};
+		CC986F89A07FC69127C2EC9F /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				CC9869F5961C95B50F4A9A39 /* OCMArg.h */,
+				CC98692DDE82A1E2441D18C1 /* OCMock.h */,
+				CC986DCDB5340C02B410F667 /* OCMockObject.h */,
+				CC9869F7E06A55D045774422 /* OCMConstraint.h */,
+				CC986B72AB627A4807022E9F /* OCMockRecorder.h */,
+				CC986B32DF0C3431BED4B717 /* NSNotificationCenter+OCMAdditions.h */,
+			);
+			path = OCMock;
+			sourceTree = "<group>";
+		};
+		CC986FC194865D1B4A5BD2D6 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				CC98655489AE77E7DC76E33D /* iOS */,
+			);
+			path = OCMock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +314,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC986D5361F216DA7CF2B4A9 /* iOSMVPKataRootTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +396,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSMVPKataRoot/iOSMVPKataRoot-Prefix.pch";
 				INFOPLIST_FILE = "iOSMVPKataRoot/iOSMVPKataRoot-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"${PROJECT_DIR}/Lib/OCMock/iOS\"/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -368,6 +413,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSMVPKataRoot/iOSMVPKataRoot-Prefix.pch";
 				INFOPLIST_FILE = "iOSMVPKataRootTests/iOSMVPKataRootTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"Lib/OCMock/iOS/**",
+				);
+				OTHER_LDFLAGS = (
+					"-force_load",
+					Lib/OCMock/iOS/libOCMock.a,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -380,6 +432,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSMVPKataRoot/iOSMVPKataRoot-Prefix.pch";
 				INFOPLIST_FILE = "iOSMVPKataRoot/iOSMVPKataRoot-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"${PROJECT_DIR}/Lib/OCMock/iOS\"/**";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
