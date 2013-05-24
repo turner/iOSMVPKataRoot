@@ -17,6 +17,7 @@
 		CC9867AE06854B36F799C582 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CC986CC3A21A985F6C58FC50 /* main.m */; };
 		CC9867F56023D52E9DA9C08A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC9869E3A2B4F2B94FBC7391 /* InfoPlist.strings */; };
 		CC9868241AE7E06E06410C12 /* EIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CC986B1AD965915AA2275D62 /* EIAppDelegate.m */; };
+		CC986844B5BF55092CF1A54E /* SanityCheckTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC986AAAA5D88BDA4D6BC73B /* SanityCheckTests.m */; };
 		CC9868B08B065829A317252F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9863E55299AFF798E2BCD0 /* Foundation.framework */; };
 		CC986ACD1C300E93EB40E4F3 /* EIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9864F46CBA9C1C0EA40074 /* EIViewController.m */; };
 		CC986B1626382DA04D1AD8E8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC986BFC9CA6A5B91310211C /* MainStoryboard.storyboard */; };
@@ -50,6 +51,7 @@
 		CC9869F5961C95B50F4A9A39 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMArg.h; sourceTree = "<group>"; };
 		CC9869F7E06A55D045774422 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMConstraint.h; sourceTree = "<group>"; };
 		CC986A52E85E7644EC6102E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CC986AAAA5D88BDA4D6BC73B /* SanityCheckTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SanityCheckTests.m; sourceTree = "<group>"; };
 		CC986B177146CCED9A4E3145 /* EIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EIViewController.h; sourceTree = "<group>"; };
 		CC986B1AD965915AA2275D62 /* EIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EIAppDelegate.m; sourceTree = "<group>"; };
 		CC986B32DF0C3431BED4B717 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+OCMAdditions.h"; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 		CC986C3AA1316A02B7574444 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CC986C5AE4584E9C061C9D4C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CC986CC3A21A985F6C58FC50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CC986D60A20C5E93C9221873 /* ISanityCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISanityCheck.h; sourceTree = "<group>"; };
 		CC986DABFA62E461DA47457E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CC986DCDB5340C02B410F667 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
 		CC986E05B9D3DA5499B5CAB5 /* EIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EIAppDelegate.h; sourceTree = "<group>"; };
@@ -101,6 +104,7 @@
 				CC986BFC9CA6A5B91310211C /* MainStoryboard.storyboard */,
 				CC986B177146CCED9A4E3145 /* EIViewController.h */,
 				CC9864F46CBA9C1C0EA40074 /* EIViewController.m */,
+				CC986D60A20C5E93C9221873 /* ISanityCheck.h */,
 			);
 			path = iOSMVPKataRoot;
 			sourceTree = "<group>";
@@ -180,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				CC98642D656839557CAE3029 /* Supporting Files */,
+				CC986AAAA5D88BDA4D6BC73B /* SanityCheckTests.m */,
 			);
 			path = iOSMVPKataRootTests;
 			sourceTree = "<group>";
@@ -314,6 +319,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC986844B5BF55092CF1A54E /* SanityCheckTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
