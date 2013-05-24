@@ -7,12 +7,11 @@
 #import "AccountTransferPresenter.h"
 
 @interface AccountTransferPresenterTest : SenTestCase
-
 @end
 
 @implementation AccountTransferPresenterTest
 
-- (void)GivenAccountTransferPresenter_WhenGetTransferAmmountIsRequested_ThenAllProtocolsAreCalled {
+- (void)testGivenAccountTransferPresenter_WhenGetTransferAmmountIsRequested_ThenAllProtocolsAreCalled {
 
     // create mocks
     id accountTransferView = [OCMockObject mockForProtocol:@protocol(IAccountTransferView)];
@@ -30,10 +29,14 @@
     [[accountTransferView expect] setDisplayMessage:@"$150 transferred."];
 
     // instantiate presenter with injected dependencies
-    AccountTransferPresenter *accountTransferPresenter = [[AccountTransferPresenter alloc] initWithLocal:localAccountRepository remote:remoteAccountRepository];
-    accountTransferPresenter.view = accountTransferView;
-    
+    AccountTransferPresenter *sut = [[AccountTransferPresenter alloc] initWithLocal:localAccountRepository remote:remoteAccountRepository];
+    sut.accountTransferView = (id<IAccountTransferView>)accountTransferView;
+    [sut transferAmount];
+
     // verify test
+    [accountTransferView verify];
+    [remoteAccountRepository verify];
+    [localAccountRepository verify];
 
 }
 
